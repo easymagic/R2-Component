@@ -146,9 +146,11 @@ var R2_comp  = {};
                 	return false;
                 });
 
-                $this.on('notify',function(e){
-                  inst.get_notification(e);
+                $this.on('notify',function(e,dt_){
+                  inst.get_notification(dt_);
                 });
+
+                //console.log(inst);
 
              }
 
